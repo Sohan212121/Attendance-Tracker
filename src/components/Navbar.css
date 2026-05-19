@@ -1,5 +1,5 @@
 .navbar {
-  background: rgba(10, 10, 26, 0.85);
+  background: var(--bg-card);
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);

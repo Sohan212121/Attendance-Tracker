@@ -64,15 +64,13 @@
   z-index: 1;
   width: 100%;
   max-width: 420px;
-  background: rgba(18, 18, 42, 0.85);
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   padding: 40px 36px;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  box-shadow:
-    0 24px 48px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(99, 102, 241, 0.08) inset;
+  box-shadow: var(--shadow-lg);
 }
 
 /* ── Header ───────────────────────────────────────────────── */

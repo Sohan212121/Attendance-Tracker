@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../utils/auth';
+import { useTheme } from '../utils/theme';
 import {
   LayoutDashboard,
   BookOpen,
@@ -7,11 +8,14 @@ import {
   BarChart3,
   LogOut,
   GraduationCap,
+  Moon,
+  Sun
 } from 'lucide-react';
 import './Navbar.css';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -57,6 +61,10 @@ export default function Navbar() {
         </div>
 
         <div className="navbar-user">
+          <button onClick={toggleTheme} className="btn btn-icon btn-ghost theme-toggle" title="Toggle Theme">
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
+          
           <div className="user-info">
             <div className="user-avatar">
               {user?.name?.charAt(0)}

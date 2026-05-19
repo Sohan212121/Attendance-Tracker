@@ -185,7 +185,7 @@
   bottom: 24px;
   margin-top: 24px;
   padding: 16px 24px;
-  background: rgba(18, 18, 42, 0.9);
+  background: var(--bg-card);
   border: 1px solid var(--border-active);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(20px);
