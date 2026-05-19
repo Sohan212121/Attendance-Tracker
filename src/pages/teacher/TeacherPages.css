@@ -1,0 +1,267 @@
+/* ── Teacher Pages Shared Styles ─────────────────────────── */
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.section-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-1);
+  transition: gap var(--transition);
+}
+.section-link:hover { gap: 8px; }
+
+/* Quick Actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.quick-action-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+.qa-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+.qa-info h3 { font-size: 0.95rem; font-weight: 600; }
+.qa-info p { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+.qa-arrow { color: var(--text-muted); margin-left: auto; transition: transform var(--transition); }
+.quick-action-card:hover .qa-arrow { transform: translateX(4px); color: var(--accent-1); }
+
+/* Class Overview Cards */
+.class-overview-card { padding: 20px; }
+.class-overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.class-overview-header h3 { font-size: 1rem; font-weight: 600; }
+.class-pct { font-size: 1.1rem; font-weight: 700; }
+.class-overview-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+.class-mini-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ── Manage Classes Page ─────────────────────────────────── */
+.classes-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.class-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+.class-card { padding: 24px; }
+.class-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.class-card-title { font-size: 1.1rem; font-weight: 700; }
+.class-student-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.class-students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+.class-student-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.03);
+  border-radius: var(--radius-sm);
+}
+.student-avatar-sm {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+.student-row-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.student-row-name { font-size: 0.85rem; font-weight: 500; }
+
+/* ── Mark Attendance Page ────────────────────────────────── */
+.attendance-controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  align-items: flex-end;
+}
+.attendance-controls .form-group { min-width: 200px; }
+.attendance-student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.attendance-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition);
+}
+.attendance-row:hover { background: var(--bg-card-hover); }
+.attendance-row-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.attendance-row-left .student-avatar-sm { width: 36px; height: 36px; font-size: 0.8rem; }
+.attendance-row-name { font-weight: 500; }
+.bulk-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.bulk-actions span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.save-bar {
+  position: sticky;
+  bottom: 24px;
+  margin-top: 24px;
+  padding: 16px 24px;
+  background: rgba(18, 18, 42, 0.9);
+  border: 1px solid var(--border-active);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-lg);
+}
+.save-bar-info {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.save-bar-info strong { color: var(--text-primary); }
+
+/* ── Reports Page ────────────────────────────────────────── */
+.report-class-selector {
+  margin-bottom: 24px;
+  max-width: 320px;
+}
+.report-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.report-summary-card {
+  padding: 20px;
+  text-align: center;
+}
+.report-summary-value {
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+}
+.report-summary-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.report-student-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.report-student-bar:last-child { border-bottom: none; }
+.report-bar-name {
+  width: 140px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.report-bar-track {
+  flex: 1;
+  height: 10px;
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+.report-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.report-bar-pct {
+  width: 48px;
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .quick-actions { grid-template-columns: 1fr; }
+  .class-cards-grid { grid-template-columns: 1fr; }
+  .attendance-controls { flex-direction: column; }
+  .attendance-controls .form-group { width: 100%; }
+}
