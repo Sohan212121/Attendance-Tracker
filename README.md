@@ -1,16 +1,55 @@
-# React + Vite
+# AttendEase - Student Attendance Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and beautifully designed web application built with React and Vite for managing student attendance. AttendEase provides separate, tailored experiences for teachers and students.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Teacher Portal
+- **Dashboard**: High-level overview of total classes, enrolled students, and attendance statistics.
+- **Manage Classes**: Easily create new subjects and enroll students.
+- **Mark Attendance**: Fast, intuitive interface to record daily attendance with single toggles or bulk actions.
+- **Reports**: Detailed class-wise and student-wise attendance analytics with visual progress bars.
 
-## React Compiler
+### Student Portal
+- **Dashboard**: Track overall attendance percentage with an interactive circular progress indicator.
+- **Subject Breakdown**: View attendance status for every enrolled subject.
+- **History**: Keep track of daily attendance records.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
+- **Frontend Framework**: React.js (via Vite)
+- **Routing**: React Router DOM
+- **Styling**: Vanilla CSS (Premium Dark Theme with Glassmorphism)
+- **Icons**: Lucide React
+- **Data Persistence**: Browser LocalStorage (Mock Backend)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Since the application uses a mock local storage backend, no database or server setup is required. 
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sohan212121/Attendance-Tracker.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd "Student Attendance Management System"
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Demo Credentials
+The application automatically seeds itself with demo data on the first load. Use these credentials to test the portals:
+
+**Teacher Demo:**
+- Username: `teacher1`
+- Password: `password`
+
+**Student Demo:**
+- Username: `student1` (or `student2`, `student3`)
+- Password: `password`
