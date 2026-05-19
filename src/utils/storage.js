@@ -4,7 +4,7 @@ const KEYS = {
   USERS: 'ams_users',
   CLASSES: 'ams_classes',
   ATTENDANCE: 'ams_attendance',
-  SEEDED: 'ams_seeded',
+  SEEDED: 'ams_seeded_v2',
   CURRENT_USER: 'ams_current_user',
 };
 
@@ -13,7 +13,7 @@ export function seedData() {
   if (localStorage.getItem(KEYS.SEEDED)) return;
 
   const users = [
-    { id: 'T1', username: 'teacher1', password: 'password', role: 'teacher', name: 'Dr. Sarah Mitchell' },
+    { id: 'T1', username: 'teacher1', password: 'password', role: 'teacher', name: 'SOHAN KUMAR K J' },
     { id: 'S1', username: 'student1', password: 'password', role: 'student', name: 'Aarav Sharma' },
     { id: 'S2', username: 'student2', password: 'password', role: 'student', name: 'Priya Patel' },
     { id: 'S3', username: 'student3', password: 'password', role: 'student', name: 'Rahul Verma' },
